@@ -1,0 +1,271 @@
+body{
+    font-family: 'Nobile', sans-serif;
+}
+
+
+/*Login Page*/
+#login_body main, #registar_body main{
+    margin-top: 15vh;
+
+}
+
+
+/*Landing Page*/
+.btn-landing_page{
+    background-color: #D61841;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.showcase li{
+    font-size: 20px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.features-icons {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.bg-light{
+    opacity: 75%;
+}
+
+.carousel-inner h4{
+    color: #D61841 !important;
+}
+
+
+.carousel-inner p{
+    color: #3F5766 !important;
+}
+
+.call-to-action{
+    background-image: url('../img/landing_page/bg-masthead.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#landing_page_1{
+    background-image: url('../img/landing_page/about_us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#landing_page_2{
+    background-image: url('../img/landing_page/ajuda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#landing_page_3{
+    background-image: url('../img/landing_page/etu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*Home_Page*/
+#home_page_ajudar{
+    background-image: url('../img/home_page/unnamed-trans.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 18.5vh;
+    padding-bottom: 18.5vh;
+
+}
+#home_page_quero_ajudar{
+    background-image: url('../img/home_page/about_us.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 18.5vh;
+    padding-bottom: 18.5vh;
+}
+
+.texto_ajuda{
+    color: #3F5766 !important;
+
+}
+
+/*O meu Perfil*/
+.foto_perfil{
+    border-radius: 100%;
+    border-color: #3F5766;
+    border-width: 2px;
+    border-style: solid;
+}
+
+
+/*Categorias*/
+#categorias_body, #login_body, #registar_body, #perfil_body{
+    background-image: url("../img/mensagens/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#catagorias_title{
+    background-image: url('../img/home_page/about_us.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+/*.categorias_tipo1{*/
+    /*background-color: #D61841;*/
+
+/*}*/
+/*.categorias_tipo2{*/
+    /*background-color: #3F5766;*/
+    /*opacity: 0.6;*/
+    /*border-radius: 50%;*/
+/*}*/
+
+
+
+/*preciso_de_ajuda*/
+
+#preciso_de_ajuda_title_body{
+    background-image: url('../img/home_page/unnamed-trans.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.preciso_de_ajuda_btn_categoria{
+    background-color: #3F5766;
+}
+
+
+/*#preciso_de_ajuda_title{*/
+    /*background-image: url('../img/home_page/unnamed-trans.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
+    /*padding-top:8vh;*/
+    /*padding-bottom: 8vh;*/
+    /*opacity: 75%;*/
+/*}*/
+.pedidos_label, .pedidos_input{
+    font-size: 1.5rem;
+}
+
+
+
+/*lista_de_pedidos*/
+
+#lista_de_pedidos_title{
+    background-image: url("../img/lista_de_pedidos/meus_pedidos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top:8vh;
+    padding-bottom: 8vh;
+    opacity: 75%;
+}
+.fundo_caixa_pedidos{
+    background-color: #3F5766;
+}
+.caixa_pedidos{
+    border-radius: 0.5rem;
+    border-color: black;
+}
+
+.lista_de_pedidos_btn, .preciso_de_ajuda_concluir{
+    background-color: #D61841;
+    color: white;
+}
+
+/*mensagens*/
+#mensagens_body, #lista_de_pedidos_body{
+    background-image: url("../img/mensagens/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.mensagens_bg_vermelho{
+
+    background-color: #F9CFDA;
+    color: black;
+
+    /*border-width: 4px;*/
+    /*border-style: solid;*/
+    /*border-color: #D61841;*/
+    /*color: black;*/
+}
+.mensagens_bg_azul_indigo{
+
+
+    background-color: #3F5766;
+    color: white;
+
+    /*border-width: 4px;*/
+    /*border-style: solid;*/
+    /*border-color: #3F5766;*/
+    /*color: black;*/
+
+
+}
+.mensagens_time_ago{
+    color: #B8CAB1;
+}
+
+@media (max-width: 325px) {
+
+    /*Landing Page*/
+    .logo{
+        max-width: 50%;
+        max-height: 50%;
+    }
+}
+
+
+@media (min-width: 326px) {
+
+
+    /*Landing Page*/
+    .logo{
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+
+}
+
+
+
+@media (min-width: 576px) {
+
+    /*Landing Page*/
+    .logo{
+        max-width: 75%;
+        max-height: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    .w-md-50{
+        width: 50%;
+        height: auto;
+
+    }
+
+}
+@media (min-width: 992px) {
+
+
+}
+@media (min-width: 1200px) {
+
+
+}
+
