@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>UpLife - Preciso de Ajuda</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <!--Metadados-->
+    <meta name="description" content="LM4 Project, UpLife">
+    <meta name="keywords" content="II, LM4A, LM4_perfilA, LM4 perfil A, NTC, Final Project, HTML, HTML5, CSS, BOOTSTRAP, JavaScript, PHP, MySQL">
+    <meta name="author" content="Ana Marques 92917, Carla Oliveira 92579, Cristina Meireles 92583, Cristina Valente 20797, Joao Almeida 94809">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BOOTSTRAP-->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!--FontAwesome-->
+    <link href="fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Nobile&display=swap" rel="stylesheet">
+
+    <!--Ours-->
+    <link href="css/meus_estilos.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body id="preciso_de_ajuda_title_body">
+<nav class="navbar navbar-expand-lg navbar-light bg-light m-auto">
+
+    <div><img class="img-fluid w-75 p-2" src="img/seta.png" alt=""></div>
+    <div class="text-right">
+        <a class="navbar-brand logo" href="home_page.html"><img src="img/logo-lat.png" class="w-100" alt="logo"></a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <img class="img-fluid w-75" src="img/icons/menu.png" alt="menu hamburger">
+    </button>
+
+    <div class="collapse navbar-collapse align-content-end" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav ml-auto ">
+            <li class="nav-item text-right">
+                <a class="nav-link font-weight-bold" href="perfil.html">Perfil</a>
+            </li>
+            <li class="nav-item text-right">
+                <a class="nav-link font-weight-bold" href="categorias.html">Preciso de Ajuda</a>
+            </li>
+            <li class="nav-item text-right">
+                <a class="nav-link font-weight-bold" href="categorias_quero_ajudar.html">Quero Ajudar</a>
+            </li>
+            <li class="nav-item text-right">
+                <a class="nav-link font-weight-bold" href="lista_de_pedidos.html">Lista de Pedidos</a>
+            </li>
+            <li class="nav-item text-right">
+                <a class="nav-link font-weight-bold" href="lista_de_mensagens.html">Mensagens</a>
+            </li>
+            <li class="nav-item text-right">
+                <a class="nav-link font-weight-bold" href="">Definições</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<main class="container mt-5 mb-5">
+
+    <section class="row mt-4 mb-4">
+        <article class="col-12">
+            <h1 class="text-center texto_ajuda font-weight-bold">Preciso de Ajuda</h1>
+        </article>
+    </section>
+
+
+        <section class="row mb-4">
+            <article class="col-12 col-md-2 mt-2">
+                <h2 class="pedidos_label pb-2">Categoria</h2>
+            </article>
+            <article class="col-12 col-md-10 mb-2">
+                <button type="button" class=" btn pedidos_label p-0"><span class="preciso_de_ajuda_btn_categoria text-white p-3">Eletricidade</span></button>
+            </article>
+        </section>
+
+    <form>
+            <div class="form-group row">
+                <label for="pedido_data" class="col-sm-2 col-form-label pedidos_label">Data</label>
+                <div class="col-12 col-md-10">
+                    <input type="date" class="form-control pedidos_input pt-4 pb-4" id="pedido_data">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="pedido_time" class="col-sm-2 col-form-label pedidos_label">Hora</label>
+                <div class="col-12 col-md-10">
+                    <input type="time" class="form-control pedidos_input pt-4 pb-4" id="pedido_time">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pedido_descricao" class="pedidos_label">Descrição:</label>
+                <textarea class="form-control pedidos_input pt-2 pb-4" id="pedido_descricao" rows="3"></textarea>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <button type="button" data-target="#myModal" data-toggle="modal" class="btn btn-lg w-100 p-3 font-weight-bold preciso_de_ajuda_concluir" id="concluido">Concluir</button>
+                </div>
+            </div>
+        </form>
+
+</main>
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-white text-dark">
+            <div class="modal-header">
+                <h5 class="modal-title">Parabéns!</h5>
+                <a id="redirecionar" href="lista_de_pedidos.html"><button type="button" class="close text_dark" data-dismiss="modal"><img class="img-fluid w-50" src="img/icons/quit.png" alt=""></button></a>
+            </div>
+            <div class="modal-body">
+                <h5 class="modal-title">O seu pedido foi executado com sucesso!</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+
+    window.onload = function () {
+        document.getElementById("redirecionar").onclick = function () {
+            window.location.replace("meus_pedidos.html");
+        };
+        document.getElementById("concluido").onclick =  function () {
+            var timer = setTimeout(function(){
+                window.location.replace("meus_pedidos.html");
+            }, 3000);
+        }
+    }
+
+</script>
+
+</body>
+</html>

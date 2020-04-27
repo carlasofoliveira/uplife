@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>UpLife - Registar</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <!--Metadados-->
+    <meta name="description" content="LM4 Project, UpLife">
+    <meta name="keywords" content="II, LM4A, LM4_perfilA, LM4 perfil A, NTC, Final Project, HTML, HTML5, CSS, BOOTSTRAP, JavaScript, PHP, MySQL">
+    <meta name="author" content="Ana Marques 92917, Carla Oliveira 92579, Cristina Meireles 92583, Cristina Valente 20797, Joao Almeida 94809">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BOOTSTRAP-->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!--FontAwesome-->
+    <link href="fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Nobile&display=swap" rel="stylesheet">
+
+    <!--Ours-->
+    <link href="css/meus_estilos.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+
+<body id="registar_body">
+
+
+<main class="container">
+    <section class="row justify-content-center">
+
+        <article class="col-12 text-center">
+            <img src="img/logo.png" class="img-fluid" alt="logo">
+        </article>
+
+        <article class="col-12 mt-4">
+            <h3 class="text-center">Faça o Seu Registo</h3>
+
+        </article>
+        <article class="col-12 col-md-8 ">
+            <form id="formulario_login" action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Escreva o seu nome." name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Escreva o seu email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="morada">Morada</label>
+                    <input type="text" class="form-control" id="morada" placeholder="Escreva a sua morada" name="morada">
+                </div>
+                <div class="form-group">
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <input type="date" class="form-control" id="data_nascimento" placeholder="Escreva a sua morada" name="data_nascimento">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Escreva a sua password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="password2">Repita a sua Password:</label>
+                    <input type="password" class="form-control" id="password2" placeholder="Escreva a sua password" name="password2">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Género</label>
+                    <div class="col-12">
+                        <label class="radio-inline" for="genero_m">
+                            <input type="radio" name="gender" id="genero_m" value="masculino" checked="checked">
+                            Masculino
+                        </label>
+                        <label class="radio-inline pl-2" for="genero_f">
+                            <input type="radio" name="gender" id="genero_f" value="femenino">
+                            Femino
+                        </label>
+                        <label class="radio-inline pl-2" for="genero_nao_diz">
+                            <input type="radio" name="gender" id="genero_nao_diz" value="sem_resposta">
+                            Não responde
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group text-center m-0">
+
+                    <button id="registar" type="submit" class="btn btn-lg font-weight-bold preciso_de_ajuda_concluir"><a class="text-white text-decoration-none" href="home_page.html">Registar</a></button>
+
+                </div>
+            </form>
+        </article>
+
+        <article class="col-12 text-center m-4">
+            <p>Já está registado?<a href="login.html" class="ml-2">Clique aqui!</a></p>
+
+        </article>
+
+    </section>
+
+
+</main>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

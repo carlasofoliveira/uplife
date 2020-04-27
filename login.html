@@ -2,20 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <meta name="author" content="UpLife">
-    <link href="../bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="fontawesome-free" rel="stylesheet" type="text/css">
-    <link href="estilos.css" rel="stylesheet">
+    <title>UpLife - Log In</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <!--Metadados-->
+    <meta name="description" content="LM4 Project, UpLife">
+    <meta name="keywords" content="II, LM4A, LM4_perfilA, LM4 perfil A, NTC, Final Project, HTML, HTML5, CSS, BOOTSTRAP, JavaScript, PHP, MySQL">
+    <meta name="author" content="Ana Marques 92917, Carla Oliveira 92579, Cristina Meireles 92583, Cristina Valente 20797, Joao Almeida 94809">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BOOTSTRAP-->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!--FontAwesome-->
+    <link href="fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Nobile&display=swap" rel="stylesheet">
+
+    <!--Ours-->
+    <link href="css/meus_estilos.css" rel="stylesheet" type="text/css"/>
+
 </head>
+<body id="login_body">
 
-<body>
-<form>
+<main class="container">
+    <section class="row justify-content-center">
 
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname">
-</form>
+        <article class="col-12 text-center">
+            <img src="img/logo.png" class="img-fluid" alt="logo">
+        </article>
+
+        <article class="col-12 mt-4">
+            <h3 class="text-center">Faça o seu Login</h3>
+
+        </article>
+        <article class="col-12 col-md-8 ">
+            <form id="formulario_login" action="scripts/sc_action_page.php" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Escreva o seu email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Escreva a sua password" name="pwd">
+                </div>
+                <div class="form-group text-center m-0">
+                    <button id="entrar" type="submit" class="btn btn-lg font-weight-bold preciso_de_ajuda_concluir"><a class="text-white text-decoration-none" href="home_page.html">Entrar</a></button>
+
+                </div>
+            </form>
+        </article>
+
+    </section>
+
+
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
